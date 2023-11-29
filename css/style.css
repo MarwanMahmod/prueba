@@ -1,0 +1,438 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+            /* Home Section */
+.navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color:rgba(0,0,0,1);
+    display: flex;
+    z-index: 9999;
+}
+.logo{
+    color: white;
+    padding-left: 50px;
+}
+.navbar-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header{
+    
+    height: 100vh;
+    background-image: url(hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    color:white;
+
+}
+.layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgba(0,0,0,0.6) ;
+    width: 100%;
+    height: 100%;
+}
+.header-content h1{
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: normal;
+}
+.header-content h4{
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: normal;
+}
+h4::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing {
+    0%{content: "|";}
+    3%{content: "D|";}
+    6%{content: "De|";}
+    9%{content: "Des|";}
+    12%{content: "Desi|";}
+    15%{content: "Desig|";}
+    18%{content: "Design|";}
+    22%{content: "Designe|";}
+    25%{content: "Designer|";}
+    28%{content: "Designe|";}
+    32%{content: "Design|";}
+    35%{content: "Desig|";}
+    38%{content: "Desi|";}
+    42%{content: "Des|";}
+    45%{content: "De|";}
+    48%{content: "D|";}
+    52%{content: "F|";}
+    55%{content: "Fr|";}
+    58%{content: "Fre|";}
+    62%{content: "Free|";}
+    65%{content: "FreeL|";}
+    68%{content: "FreeLa|";}
+    72%{content: "FreeLan|";}
+    75%{content: "Freelanc|";}
+    78%{content: "FreeLance|";}
+    82%{content: "FreeLancer|";}
+    85%{content: "FreeLance|";}
+    88%{content: "FreeLanc|";}
+    92%{content: "FreeLan|";}
+    95%{content: "FreeLa|";}
+    96%{content: "FreeL|";}
+    97%{content: "Free|";}
+    98%{content: "Fre|";}
+    99%{content: "Fr|";}
+    100%{content: "F|";}
+    100%{content: "|";}
+}
+
+
+
+
+
+
+            /* About Section */
+#about-me{
+    padding:15% 0%;
+}
+.box-shadow{
+    padding: 1rem;
+}
+.box-shadow{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 3rem;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 2px 5px 0px;
+}
+.skills p{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.skills span{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+            /* Services section */
+
+.services{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.line{
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+.services .icons {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+}
+.services .circle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    display: block;
+}
+.services .circle i {
+    line-height: 0;
+    font-size: 40px;
+}
+.title h3{
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: normal;
+    font-weight: bolder;
+}
+
+
+
+
+            /* counter section  */
+
+
+.paralax-mf {
+    position: relative;
+    padding: 8rem 0px;
+}
+.overlayer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    padding: 0px;
+}
+.counter-ico {
+    margin-bottom: 1rem;
+}
+.counter-num .counter {
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+.counter-box {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.circle-2{
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px whitesmoke;
+    display: block;
+}
+.counter-box .counter {
+    margin-bottom: 1rem;
+    color:whitesmoke;
+}
+.counter-box .circle-2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+            /* portfolio section */
+.card-body h5{
+    font-size: 25px;
+}
+.card{
+    overflow: hidden;
+}
+.card img{
+    transition: all 2s;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.title h3{
+    font-size: 60px;
+    line-height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* carousel cards section */
+.paralax-mf {
+    position: relative;
+    padding: 8rem 0px;
+}
+
+
+.content img{
+    width:100px;
+    }
+    
+    .carousel-indicators [data-bs-target]{
+    width:20px;
+    height: 20px;
+    border-radius:50%;
+    }
+    
+    .carousel-indicators [data-bs-slide-to="0"]{
+    background-color: gray;
+    background-size: 100% 100%;
+    }
+    .carousel-indicators [data-bs-slide-to="1"]{
+    background-color: gray;
+    background-size: 100% 100%;
+    }
+    .carousel-indicators .active{
+    width:10px;
+    height: 10px;
+    }
+
+
+            /* Blog section */
+.card-footer img{
+    width: 9%;
+}
+.content{
+    transition: color 2s;
+}
+.card-body .content:hover{
+    color:#0078ff;
+}
+.card-footer .content:hover{
+    color:#0078ff;
+}
+
+
+
+
+
+
+            /* contact us section */
+
+.paralax-mf{
+    position: relative;
+}
+.overlay-mf {
+    background-color: rgb(0, 120, 255);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    padding: 0px;
+}
+.contact{
+    margin-top: 4rem;
+}
+.box-title {
+    margin-bottom: 3rem;
+}
+h5 {
+    color: rgb(30, 30, 30);
+}
+.box-title{
+    position: relative;
+}
+.title-left::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: rgb(0, 120, 255);
+    width: 100px;
+    bottom: -12px;
+}
+button[type="submit"] {
+    color: white;
+    background: rgb(0, 120, 255);
+    border-width: 0px;
+    padding: 10px 24px;
+}
+
+.social-icons {
+    color: #1e1e1e;
+}
+.social-icons .circle-3{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-3{
+    padding-top: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 1;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 0 2px #0078ff;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width:992) {
+    ul{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768) {
+    .navbar{
+        flex-direction: column;
+    }
+    ul{
+    flex-direction: column;
+    }
+    li{
+        padding: 5px 0px;
+    }
+} */
